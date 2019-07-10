@@ -1,4 +1,14 @@
-;;This program takes a program written in Java syntax and interpretes and evaluates the output
+;; ****
+;; WE WERENT ABLE TO FINISH ALL OF THE FUNCTIONALITY BUT WE HAVE IMPLEMENTED 1,2,3,5,6,7. WE IMPLEMENTED THE ABILITY TO CREATE NEW INSTANCES, EVALUATE FUNCTION CALLS, EVALUATE VARIABLE CALLS
+;; OUR MAJOR PROBLEM IS THAT WE HAVE NOT IMPLEMENTED "THIS" TO BE PASSED TO ALL MVALUE/MSTATE FUNCTIONS
+;; To add "this" to all mstate and mvalue functions we would:
+;; -Add a field called this to mvalue-helper that would be returned as "this" in the third case
+;; -Add a this as a parameter to Mvalue, so it could be passed into mvalue-helper
+;; -Add this as a parameter to all function calls
+;; -Add this as a parameter to all other mstate mvalue functions (could not get them all working and was breaking code)
+;; ****
+
+; If you are using scheme instead of racket, comment these two lines, uncomment the (load "simpleParser.scm") and comment the (require "simpleParser.rkt")
 #lang racket
 
 (require "classParser.rkt")
